@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descreption" content="Definition de HTML et CSS ,la diffrence entre HTML5 et HTMLX,et des petites excercices... ,les balises ,et des pratiques">
+    <meta name="keyword" content="definition html css, html css, diffrence entre html5 et htmlx,pratique html,les balises de html5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autour" content="ELYES GHOUMA">
+    <title>Presentation Du Projet</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://i.ibb.co/Vp6VwMc/el-las.jpg" rel="icon" type="image/png">
+</head>
+<body>
+    <nav>
+        <a href="ghouma.html">HTML5&CSS</a>
+        <a href="sansa.html">L'Evolution de HTML</a>
+        <a href="baccari.html">Les balises de HTML5</a>
+        <a href="editeurs.html">Les editeurs</a>
+        <a href="pratique.html" class="active">Travaux pratique</a>  <br><br>
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>            
+        <a href="feedback.html">Feedback</a>
+    </nav>
+    <section id="pratique">
+        <div>
+            <h2>Pratique HTML5</h2>
+            <img src="https://i.ibb.co/W5Xq17s/tp1.jpg" class="tp1">
+        </div>
+    </section>
+    <section id="correction" style="margin: 50px auto;">
+        <div id="correction-shower" style="display: block;">
+            <p>Appuis sur <mark>Show</mark> pour la correction</p>
+            <button onclick="shownhide('correction-fieldset'),shownhide('correction-hider'),shownhide('correction-shower')" type="button" >Show</button>
+        </div>
+        <fieldset id="correction-fieldset" style="display: none; margin: 35px auto; padding: auto 0px;">
+            <legend><em>Correction</em></legend>
+            <div class="correction-container" id="correction-container">
+                <div class="next" onclick="changeimg('correctionimg',1),numbering('numofimg')"></div>
+                <div class="prev" onclick="changeimg('correctionimg',0),numbering('numofimg')"></div>
+                <img class="correctionimg" id="correctionimg" src="https://i.ibb.co/wQWjpDS/image.png" >
+            </div>
+            <h5 id="numofimg"></h5>
+        </fieldset>
+        <div id="correction-hider" style="display: none;" >
+            <p>Appuis sur <mark>Hide</mark> pour la correction</p>
+            <button onclick="shownhide('correction-fieldset'),shownhide('correction-hider'),shownhide('correction-shower')" type="button" >Hide</button>
+        </div>
+    </section>
+</body>

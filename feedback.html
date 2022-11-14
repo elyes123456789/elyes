@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descreption" content="Definition de HTML et CSS ,la diffrence entre HTML5 et HTMLX,et des petites excercices... ,les balises ,et des pratiques">
+    <meta name="keyword" content="definition html css, html css, diffrence entre html5 et htmlx,pratique html,les balises de html5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autour" content="ELYES GHOUMA">
+    <title>Presentation Du Projet</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://i.ibb.co/Vp6VwMc/el-las.jpg" rel="icon" type="image/png">
+</head>
+<body>
+    <nav>
+        <a href="ghouma.html">HTML5&CSS</a>
+        <a href="sansa.html">L'Evolution de HTML</a>
+        <a href="baccari.html">Les balises de HTML5</a>
+        <a href="editeurs.html">Les editeurs</a>
+        <a href="pratique.html">Travaux pratique</a>  <br><br> 
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>     
+        <a href="feedback.html" class="active">Feedback</a>
+    </nav>
+    <div>
+        <label for="noteinput">Notez Nous sur <strong>20</strong>
+        <input type="number" min="0" max="20" id="noteinput" class="note"></label>
+        <button type="button" id="notebtn" onclick="btnDisabling('notebtn'),note()" disabled>Submit</button>
+        <p id="message"></p>
+    </div>
+    <script>
+        noteinput.oninput = function(){
+        notebtn.disabled=false
+        }
+    </script>
+    <div>
+    <form action="#">
+        <textarea name="feedback" id="feedbacktext" cols="20" rows="5" placeholder="Your Feedback..." required></textarea>
+        <button type="submit" id="feedbackinput" >Send Feedback</button>
+    </form>
+    </div>
+</body>
